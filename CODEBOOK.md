@@ -35,9 +35,9 @@ and `data_features_test` (2947\*561) by `rbind()`:
 `data_subject`(10299\*1), and `data_activity`(10299\*1) by `cbind()`.
 
 If you have question about the code, please run it. Talk is cheap, run
-the code please!\`
+the code please!
 
-1.  Extracts only the measurements on the mean and standard deviation
+3.  Extracts only the measurements on the mean and standard deviation
     for each measurement. (Step 2 in the course project) Combine
     `select()` and `contains` can easily extract the variables including
     “mean()” and “std()”.
@@ -47,14 +47,14 @@ the code please!\`
     data_selected <- data_full %>% 
         select(contains(c("mean()","std()")),subject, activity)
 
-1.  Uses descriptive activity names to name the activities in the data
+4.  Uses descriptive activity names to name the activities in the data
     set. (Step 3 in the course project)
 
 <!-- -->
 
     data_selected$activity <- data_activity_names[data_selected$activity,2] 
 
-1.  Appropriately labels the data set with descriptive variable names.
+5.  Appropriately labels the data set with descriptive variable names.
     (Step 4 in the course project)
 
 -   `Acc` is replaced by `accelerometer_`
@@ -63,7 +63,7 @@ the code please!\`
 -   `Body` is replaced by `body_`
 -   `^f` is replaced by `frequency_`
 
-1.  From the data set in step 4, creates a second, independent tidy data
+6.  From the data set in step 4, creates a second, independent tidy data
     set with the average of each variable for each activity and each
     subject. (Step 5 in the course project) `summarize_all()` can get
     the result.
