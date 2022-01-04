@@ -11,7 +11,7 @@ This is the course project for the Getting and Cleaning Data Coursera course.
   - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
  
  - `CODEBOOK.md` :
-   - The codebook for the details. 
+   - The codebook for the details about data cleaning and analysis. 
 
  - `output.txt`:
    - The output of `run_analysis.R`.
